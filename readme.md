@@ -92,6 +92,9 @@ yourself, but in Django the framework writes them for us!
 In order to migrate this model to the database, we will run two commands. The
 first is:
 
+Windows users, you may need to add 'python -m' before some of your pipenv commands
+
+
 ```bash
 $ python3 manage.py makemigrations
 ```
@@ -110,7 +113,8 @@ files and let django figure out what to generate from them by running
 You **should** commit the migration files into git, however. They are crucial
 for other people who want to run their own app.
 
-When you've made all the changes you think you need, go ahead and run:
+When you've made all the changes you think you need, go ahead and run:\
+
 
 ```bash
 $ python3 manage.py migrate
@@ -193,6 +197,8 @@ You can read more about migrations
 
 If you want to see which migrations have been run already, use the command
 `python3 manage.py showmigrations`.
+
+
 
 ### Admin Console (10 min / 1:20)
 
